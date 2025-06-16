@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player: Music for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <img src="./assets/logo.png" alt="spotify-logo">
+
+        <div class="searchbar">
+
+            <div class="homeicon"><i class="fa-solid fa-house"></i></div>
+            
+            <div class="bar">
+                <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
+                <input  type="text" placeholder="           What do you want to play?">
+            </div>
+
+        </div>
+
+        <div class="additionals">
+
+            <div class="install">
+                <i id="donwloadicon" class="fa-solid fa-arrow-down"></i>
+                <label for="donwloadicon">Install Apps</label>
+
+            </div>
+
+            <i id="bellicon" class="fa-regular fa-bell"></i>
+            <i id="friendactivity" class="fa-solid fa-users"></i>
+
+            <div class="account">
+                <span id="S">S</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="sidebarandmain">
+
+        <div class="sidebar">
+
+            <div class="sidebarheader">
+
+                <div class="sidebarheaderrow1">
+                    <p>Your Library</p>
+                    <div class="sidebarheaderrow1col2">
+                        <button> + Create</button>
+                        <i class="fa-solid fa-arrows-up-down"></i>
+                    </div>
+
+                </div>
+                <div class="sidebarheaderrow2">
+                    <button>Playlists</button>
+                    <button>Artists</button>
+                    <button>Album</button>
+                    <button id="podcastandshows">Podcasts and Shows</button>
+                </div>
+
+
+            </div>
+
+
+            <div class="sidebarmain">
+
+
+                <div class="sidebarmainrow1">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="sidebarmainrow1col2">
+
+                        <label for="recents">Recents</label>
+                        <i id="recents" class="fa-solid fa-bars"></i>
+
+                    </div>
+                </div>
+
+                <div class="sidebarcard1">
+                    <div class="sidebarcard1img">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div class="sidebarcard1info">
+                        <p id="sidelikedsongs">Liked Songs</p>
+                        <p><i id="thumpback" class="fa-solid fa-thumbtack">    </i>Playlist.483 songs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="songs">
+                        <div class="songimage">
+                            <img src="./assets/fadedsongbackground.jpg" height="48px" width="48px">
+                        </div>
+                        
+                        <a href="#">Songs</a>
+                        <p>Playlist.Sameer Bharitkar</p>
+                        
+                </div>
+
+                <div class="lockedheart">
+                        <div class="lockedheartimg">
+                            <img src="./assets/image_48x48.png" >
+                        </div>
+                        
+                        <a href="#">Locked Hearts 🗝️</a>
+                        <p>Playlist.Khushi 🪐</p>
+                        
+                </div>
+
+                <div class="ncs">
+                        <div class="ncsimg">
+                            <img src="./assets/fadedsongbackground.jpg" height="48px" width="48px">
+                        </div>
+                        
+                        <a href="#">NCS</a>
+                        <p>Playlist.Sameer Bharitkar</p>
+                        
+                </div>
+
+                <div class="alanwalker">
+                        <div class="alanwalkerimg">
+                            <img src="./assets/alanwalker.jpeg" height="48px" width="48px">
+                        </div>
+                        
+                        <a href="#">Alan Walker</a>
+                        <p>Artist</p>
+                        
+                </div>
+
+                <div class="taylorswift">
+                        <div class="taylorswiftimg">
+                            <img src="./assets/taylorswift.jpeg" height="48px" width="48px">
+                        </div>
+                        
+                        <a href="#">Taylor Swift</a>
+                        <p>Artist</p>
+                        
+                </div>
+
+                <div class="justinbeiber">
+                        <div class="justinbeiberimg">
+                            <img src="./assets/ab676161000051748ae7f2aaa9817a704a87ea36.jpeg" height="48px" width="48px">
+                        </div>
+                        
+                        <a href="#">Justin Beiber</a>
+                        <p>Artist</p>
+                        
+                </div>
+
+
+                <div class="sidebarcard1">
+                    <div class="sidebarcard1img">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div class="sidebarcard1info">
+                        <p id="sidelikedsongs">Liked Songs</p>
+                        <p><i id="thumpback" class="fa-solid fa-thumbtack">    </i>Playlist.483 songs</p>
+                        
+                    </div>
+
+                </div>
+
+
+
+                <div class="sidebarcard1">
+                    <div class="sidebarcard1img">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div class="sidebarcard1info">
+                        <p id="sidelikedsongs">Liked Songs</p>
+                        <p><i id="thumpback" class="fa-solid fa-thumbtack">    </i>Playlist.483 songs</p>
+                        
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <div class="main">
+            <div class="mainheader">
+                <button id="All">All</button>
+                <button>Music</button>
+                <button id="Podcasts">Podcasts</button>
+            </div>
+
+            <div class="mainsmallcards">
+                <div class="mainsmallcardscard1">
+                    <div class="mainsmallcardscard1img">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="mainsmallcardscard1info">Liked Songs</div>
+                </div>
+
+                <div class="mainsmallcardscard2">
+                    <div class="mainsmallcardscard2img">
+                        <img src="./assets/fadedsongbackground.jpg" alt="alan">
+                    </div>
+                    <div class="mainsmallcardscard2info">Songs</div>
+                </div>
+
+
+                <div class="mainsmallcardscard3">
+                    <div class="mainsmallcardscard3img">
+                        <img src="./assets/taylorswift.jpeg" alt="taylor">
+                    </div>
+                    <div class="mainsmallcardscard3info">Niceones</div>
+                </div>
+
+                <div class="mainsmallcardscard4">
+                    <div class="mainsmallcardscard4img">
+                        <img src="./assets/alanwalker.jpeg" alt="walker">
+                    </div>
+                    <div class="mainsmallcardscard4info">Alan Walker</div>
+                </div>
+
+                <div class="mainsmallcardscard5">
+                    <div class="mainsmallcardscard5img">
+                        <img src="./assets/closer.jpg" alt="closer">
+                    </div>
+                    <div class="mainsmallcardscard5info">Most Fav</div>
+                </div>
+
+                <div class="mainsmallcardscard6">
+                    <div class="mainsmallcardscard6img">
+                        <img src="./assets/your top songs 2k24.jpg" alt="2k24">
+                    </div>
+                    <div class="mainsmallcardscard6info">Your Top Songs 2k24</div>
+                </div>
+
+                <div class="mainsmallcardscard7">
+                    <div class="mainsmallcardscard7img">
+                        <img src="./assets/dua lipa.jpg" alt="dua lipa">
+                    </div>
+                    <div class="mainsmallcardscard7info">Dua Lipa</div>
+                </div>
+
+                <div class="mainsmallcardscard8">
+                    <div class="mainsmallcardscard8img">
+                        <img src="./assets/selena.jpg" alt="Selena">
+                    </div>
+                    <div class="mainsmallcardscard8info">Selena Gomez</div>
+                </div>
+            </div>
+
+            <div class="maincards">
+                <div class="container">
+                    <p>Made for</p>
+                    <h2>Sameer Janardan Bharitkar</h2>
+                    <div class="cardcontainer">
+                        <div class="card">
+                            <img src="./assets/card1img.jpeg" alt="card1">
+                            <p>Top 50 Global.Enjoy whats the worlds playing</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/discover weekly.jpeg" alt="card1">
+                            <p>Your weekly mixtape of fresh music.Enjoy new...</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/taylorswiftcard.jpeg" alt="card1">
+                            <p>Taylor Swift, Adriana Grande, Dua Lipa</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card2img.jpeg" alt="card1">
+                            <p>Naye Indie gano ka ghazana. Enjoy the range and diversity</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card3img.jpeg" alt="card1">
+                            <p>Catch all the latest musis from the artist you adore</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card4img.jpeg" alt="card1">
+                            <p>Bollywood,Tollywood all at once</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="secondcontainer" class="container">
+                    <p>Made for</p>
+                    <h2>Sameer Janardan Bharitkar</h2>
+                    <div class="cardcontainer">
+                        <div class="card">
+                            <img src="./assets/card1img.jpeg" alt="card1">
+                            <p>Top 50 Global.Enjoy whats the worlds playing</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/discover weekly.jpeg" alt="card1">
+                            <p>Your weekly mixtape of fresh music.Enjoy new...</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/taylorswiftcard.jpeg" alt="card1">
+                            <p>Taylor Swift, Adriana Grande, Dua Lipa</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card2img.jpeg" alt="card1">
+                            <p>Naye Indie gano ka ghazana. Enjoy the range and diversity</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card3img.jpeg" alt="card1">
+                            <p>Catch all the latest musis from the artist you adore</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card4img.jpeg" alt="card1">
+                            <p>Bollywood,Tollywood all at once</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="thirdcontainer" class="container">
+                    <p>Made for</p>
+                    <h2>Sameer Janardan Bharitkar</h2>
+                    <div class="cardcontainer">
+                        <div class="card">
+                            <img src="./assets/card1img.jpeg" alt="card1">
+                            <p>Top 50 Global.Enjoy whats the worlds playing</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/discover weekly.jpeg" alt="card1">
+                            <p>Your weekly mixtape of fresh music.Enjoy new...</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/taylorswiftcard.jpeg" alt="card1">
+                            <p>Taylor Swift, Adriana Grande, Dua Lipa</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card2img.jpeg" alt="card1">
+                            <p>Naye Indie gano ka ghazana. Enjoy the range and diversity</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card3img.jpeg" alt="card1">
+                            <p>Catch all the latest musis from the artist you adore</p>
+                        </div>
+                                                <div class="card">
+                            <img src="./assets/card4img.jpeg" alt="card1">
+                            <p>Bollywood,Tollywood all at once</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mediaplayer">
+        <div class="playersongcard">
+            <div class="playersongcardimg">
+                <img src="./assets/calmdownimage.jpeg" alt="Selena">
+            </div>
+            <div class="playersongcardtitle">
+                <p id="songname">Calm Down(With Selena Gomez) &nbsp;&nbsp;&nbsp;<i id="heart" class="fa-solid fa-heart"></i></p>
+                <p id="songinfo">Rema,Selena Gomez</p>
+            </div>
+        </div>
+
+        <div class="mainmediaplayer">
+            <div class="musicplayericons">
+                <img src="./assets/player_icon1.png">
+                <img src="./assets/player_icon2.png">
+                <img id="playicon" src="./assets/player_icon3.png">
+                <img src="./assets/player_icon4.png">
+                <img src="./assets/player_icon5.png">
+            </div>
+            <div class="progressbar">
+                <span>0.00</span>
+                <progress id="musicprogressbar" min="0" max="100" value="30" ></progress>
+                <span>3.14</span>
+            </div>
+        </div>
+        <div class="mediaplayeradditionals">
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-bars"></i>        
+            <img src="./assets/controls_icon4.png" height="18px" width="18px">
+            <i class="fa-solid fa-headphones"></i>
+            <progress id="soundprogress" min="0" max="100" value="20"></progress>
+            <i class="fa-sharp fa-solid fa-mobile-screen"></i>
+            <i  id="final" class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+
+    
+</body>
+</html>
